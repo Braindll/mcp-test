@@ -11,17 +11,22 @@ Bu proje, modern ve etkileyici bir kişisel portfolio web sitesidir.
 - Projeler galerisi
 - İletişim formu
 - Blog bölümü
-- Animasyonlu geçişler
+- Etkileyici animasyonlar
 
 ## 🛠️ Kullanılan Teknolojiler
 
-- React.js
-- Next.js
-- Tailwind CSS
-- Framer Motion (animasyonlar için)
-- TypeScript
-- Node.js
-- MongoDB (blog yazıları için)
+- Vue.js 3 (Composition API)
+- Firebase
+  - Authentication
+  - Firestore
+  - Storage
+  - Hosting
+- GSAP (Gelişmiş animasyonlar için)
+- Animate.css (Basit ve etkili animasyonlar için)
+- Vite (Build tool)
+- Pinia (State management)
+- Vue Router
+- TailwindCSS (Styling)
 
 ## 📦 Kurulum
 
@@ -43,27 +48,47 @@ npm run dev
 
 4. Tarayıcınızda açın:
 ```
-http://localhost:3000
+http://localhost:5173
 ```
 
-## 🔧 Yapılandırma
+## 🔧 Firebase Yapılandırması
 
-`.env.local` dosyası oluşturup aşağıdaki değişkenleri ayarlayın:
+`.env` dosyası oluşturup Firebase yapılandırma bilgilerinizi ekleyin:
 
 ```env
-MONGODB_URI=your_mongodb_connection_string
-NEXT_PUBLIC_GA_ID=your_google_analytics_id
+VITE_FIREBASE_API_KEY=your_api_key
+VITE_FIREBASE_AUTH_DOMAIN=your_auth_domain
+VITE_FIREBASE_PROJECT_ID=your_project_id
+VITE_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+VITE_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+VITE_FIREBASE_APP_ID=your_app_id
 ```
 
 ## 📝 Özelleştirme
 
-`data/config.ts` dosyasını düzenleyerek kişisel bilgilerinizi güncelleyebilirsiniz:
+`src/config/settings.js` dosyasını düzenleyerek kişisel bilgilerinizi güncelleyebilirsiniz:
 
 - Kişisel bilgiler
 - Sosyal medya linkleri
 - Projeler
 - Yetenekler
 - İletişim bilgileri
+
+## 🎨 Animasyonlar
+
+Projede iki farklı animasyon kütüphanesi kullanılmaktadır:
+
+### GSAP
+- Sayfa geçişleri
+- Kaydırma bazlı animasyonlar
+- Kompleks timeline animasyonları
+- Paralaks efektleri
+
+### Animate.css
+- Hover efektleri
+- Giriş/çıkış animasyonları
+- Dikkat çekici elementler
+- Basit geçiş efektleri
 
 ## 📱 Responsive Tasarım
 
