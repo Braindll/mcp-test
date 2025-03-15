@@ -1,8 +1,6 @@
 <template>
   <div class="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
-    <nav class="fixed w-full z-50">
-      <!-- Navigation component gelecek -->
-    </nav>
+    <TheNavigation />
 
     <router-view v-slot="{ Component }">
       <transition
@@ -19,6 +17,7 @@
 <script setup>
 import { onMounted } from 'vue'
 import { useThemeStore } from './stores/theme'
+import TheNavigation from './components/TheNavigation.vue'
 
 const themeStore = useThemeStore()
 
