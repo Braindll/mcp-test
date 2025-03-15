@@ -78,6 +78,7 @@ const menuItems = [
   { name: 'Projeler', path: '/projects' },
   { name: 'Hakkımda', path: '/about' },
   { name: 'İletişim', path: '/contact' },
-  { name: 'Animasyon Demo', path: '/animation-demo' }
+  { name: 'Animasyon Demo', path: '/animation-demo' },
+  { name: 'Metin Animatör', path: '/text-animator' }
 ]
 </script>
