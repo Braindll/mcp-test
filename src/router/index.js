@@ -27,6 +27,11 @@ const router = createRouter({
       path: '/animation-demo',
       name: 'animation-demo',
       component: () => import('../views/AnimationDemoView.vue')
+    },
+    {
+      path: '/text-animator',
+      name: 'text-animator',
+      component: () => import('../views/TextAnimatorDemo.vue')
     }
   ]
 })
