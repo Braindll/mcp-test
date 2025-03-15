@@ -77,6 +77,7 @@ const menuItems = [
   { name: 'Ana Sayfa', path: '/' },
   { name: 'Projeler', path: '/projects' },
   { name: 'Hakkımda', path: '/about' },
-  { name: 'İletişim', path: '/contact' }
+  { name: 'İletişim', path: '/contact' },
+  { name: 'Animasyon Demo', path: '/animation-demo' }
 ]
 </script>
